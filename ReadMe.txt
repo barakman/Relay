@@ -1,4 +1,4 @@
-In order to relay messages between a Slack channel and a Telgram room, you need the following:
+In order to relay messages between a Slack channel and a Telegram room, you need the following:
 
 1. SLACK_TOKEN:
    - Generate a token for the Slack channel at https://api.slack.com/docs/oauth-test-tokens
@@ -7,7 +7,7 @@ In order to relay messages between a Slack channel and a Telgram room, you need 
     - Retrieve the ID of the Slack channel
 
 3. TELEG_BOT_ID:
-   Create a bot in the Telgram room:
+   Create a bot in the Telegram room:
    - Enter /newbot and ollow the instructions given by the BotFather
    - Enter /setprivacy and disable the bot's privacy
    You can read more detailed instructions at either one of the following:
@@ -28,7 +28,7 @@ In order to relay messages using webhooks instead of polling, you also need the 
 
 7. TELEG_WEBHOOK:
    - Obtain an https url for your server
-   - Create a webhook between the Telgram room and your server (read more at https://core.telegram.org/bots/webhooks)
+   - Create a webhook between the Telegram room and your server (read more at https://core.telegram.org/bots/webhooks)
 
 8. TELEG_PORT_ID:
    - Open a designated port on your server
