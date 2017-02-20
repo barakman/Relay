@@ -9,6 +9,7 @@ class Slack():
         self.users = {}
     def rx(self,data):
         message = parse_qs(data)
+        assert "bot_id" not in message
         return {"from":self.getUser(message["user_id"][0]),"text":message["text"][0]}
     def tx(self,username,text):
         resp = self.conn.api_call("chat.postMessage",channel=self.channel,username=username,text=text)
